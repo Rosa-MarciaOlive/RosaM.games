@@ -18,7 +18,7 @@ public class Genero {
     private int id;
     private String nome;
 
-@OneToMany(mappedBy="plataforma")
+@ManyToMany(mappedBy="plataforma")
 private Set<jogo=new HashSet<>();
 
     public int getId() {
@@ -35,3 +35,4 @@ private Set<jogo=new HashSet<>();
     }
  
 }
+
